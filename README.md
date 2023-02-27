@@ -67,3 +67,5 @@ subData\
 
 # Credits
 These definitions were written by [Alexandre_Nunes](https://github.com/amnzera).
+
+GitHub [Ofuscate-graphql](https://github.com/amnzera/ofuscate-graphql).
