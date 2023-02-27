@@ -7,7 +7,7 @@
 * Example:
 
 > `export const environment = {
-key: "118ed793f750d7b8212874e99f8495f3"
+key: "your-key",
 };
 `
 
