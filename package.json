@@ -1,0 +1,15 @@
+{
+  "name": "ofuscate-graphql",
+  "version": "1.0.4",
+  "description": "Package to ofuscate graphql in project",
+  "main": "index.js",
+  "module": "index.mjs",
+  "keywords": [
+    "ofuscate-graphql"
+  ],
+  "author": "Alexandre Mendes Nunes",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.1.1"
+  }
+}
