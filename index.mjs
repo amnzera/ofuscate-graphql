@@ -14,7 +14,7 @@ if(secretKey){
         encryptQuery(filepath,secretKey);
     });
 } else {
-    console.log("-------------------------------- Please specify a 'keyOfuscate' in the environment file --------------------------------");
+    console.log("-------------------------------- Please specify a 'key' in the environment file --------------------------------");
 }
 
 
@@ -36,7 +36,7 @@ export function getEnvironment(dirPath) {
 
 export function readEnvironment(filePathEnv){
     const fileContent = fs.readFileSync(filePathEnv[0], 'utf8');
-    const matchResult = fileContent.match(/keyOfuscate: '(.*)'/) || fileContent.match(/keyOfuscate: "(.*)"/);
+    const matchResult = fileContent.match(/key: '(.*)'/) || fileContent.match(/key: "(.*)"/);
     return matchResult ? matchResult[1] : null;
 }
 
