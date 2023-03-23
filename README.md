@@ -6,28 +6,30 @@
 * First Step: Add 'keyOfuscate' in file environment.
 * Example:
 
-> `export const environment = {
-key: "your-key",
-};
-`
+```typescript
+export const environment = {
+    key: "your-key",
+    ...
+}
+```
 
 
 * Second step: Your file must end with the .query.ts extension
 
 * Example:
 
-> `your-file.query.ts`
+> `your-file.query.ts`   OR   `your-file.mutation.ts`
 
 * And your querys must be "const export":
 
+```typescript
+export const your_query = gql`
+    query your_query {
+    ...
+    }
+`
+```
 
-> `export const Your_Query = gql`
-query YourQuery {\
-data {  \
-subData\
-}\
-}
-`;`
 
 * Third step: Run the command before the final build of the project
 
@@ -43,18 +45,17 @@ subData\
 
 * Example:
 
-> `import * as CriptoJS from 'crypto-js`
+```typescript
+import * as CriptoJS from 'crypto-js
+import { gql } from "graphql-tag"
 
-> `import { gql } from "graphql-tag";`
+removeCripto(My_query) {
+    const decrypted = CryptoJS.AES.decrypt(My_query, environment.key);
+    const originalQuery = decrypted.toString(CryptoJS.enc.Utf8);
+    return gql(decryptedQuery);
+}
 
-> `const decrypted = CryptoJS.AES.decrypt(My_query, environment.keyOfuscate);`
-
-> `const decrypted = CryptoJS.AES.decrypt(My_query, environment.keyOfuscate);`
-
-> `const originalQuery = decrypted.toString(CryptoJS.enc.Utf8);`
-
-> `return gql(decryptedQuery);`
-
+```
 
 
 
