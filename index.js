@@ -80,7 +80,7 @@ export function getFilesWithQueryTs(dirPath, files = []) {
 
         if (stat.isDirectory()) {
             getFilesWithQueryTs(filePath, files);
-        } else if (filePath.endsWith('.query.ts')) {
+        } else if (filePath.endsWith('.query.ts') || filePath.endsWith('.mutation.ts') ) {
             files.push(filePath);
         }
     });
