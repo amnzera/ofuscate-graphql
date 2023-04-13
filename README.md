@@ -51,7 +51,7 @@ export const your_query = gql`
 * Example:
 
 ```typescript
-import * as CriptoJS from 'crypto-js
+import * as CriptoJS from 'crypto-js'
 import { gql } from "graphql-tag"
 
 removeCripto(My_query) {
@@ -69,7 +69,7 @@ removeCripto(My_query) {
 
 
 ### Additional Details
- * Dependencies: CryptoJS(https://github.com/brix/crypto-js)
+* Dependencies: CryptoJS(https://github.com/brix/crypto-js)
 
 # Credits
 These definitions were written by [Alexandre_Nunes](https://github.com/amnzera).
