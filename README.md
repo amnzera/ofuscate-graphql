@@ -1,4 +1,5 @@
 # Installation
+
 > `npm i ofuscate-graphql --save-dev`
 
 # The purpose
