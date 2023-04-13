@@ -1,9 +1,13 @@
 # Installation
 > `npm i ofuscate-graphql --save-dev`
 
+# The purpose
+
+* This package is to obfuscate graphql-tag in the production application code, not in the payload
+
 # How use this package
 
-* First Step: Add 'keyOfuscate' in file environment.
+* First Step: Add 'key' in file environment.
 * Example:
 
 ```typescript
