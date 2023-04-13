@@ -1,6 +1,6 @@
 {
   "name": "ofuscate-graphql",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Package to ofuscate graphql in project",
   "main": "index.js",
   "module": "index.mjs",
