@@ -54,9 +54,9 @@ export const your_query = gql`
 import * as CriptoJS from 'crypto-js'
 import { gql } from "graphql-tag"
 
-removeCripto(My_query) {
-    const decrypted = CryptoJS.AES.decrypt(My_query, environment.key);
-    const originalQuery = decrypted.toString(CryptoJS.enc.Utf8);
+removeCryptography(my_query: string) {
+    const decrypted = CryptoJS.AES.decrypt(my_query, environment.key);
+    const decryptedQuery = decrypted.toString(CryptoJS.enc.Utf8);
     return gql(decryptedQuery);
 }
 
